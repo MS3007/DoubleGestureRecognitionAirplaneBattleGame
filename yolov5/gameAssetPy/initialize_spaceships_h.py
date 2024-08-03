@@ -1,0 +1,15 @@
+import os
+import pygame
+
+# from main import SPACESHIP_HEIGHT, SPACESHIP_WIDTH
+SPACESHIP_WIDTH, SPACESHIP_HEIGHT = 55, 40  # 飞船的尺寸
+def initialize_spaceships():
+    reds = [pygame.Rect(700, 300 + SPACESHIP_HEIGHT, SPACESHIP_WIDTH, SPACESHIP_HEIGHT),
+            pygame.Rect(700, 300 + (2 * SPACESHIP_HEIGHT), SPACESHIP_WIDTH, SPACESHIP_HEIGHT),
+            pygame.Rect(700, 300 - SPACESHIP_HEIGHT, SPACESHIP_WIDTH, SPACESHIP_HEIGHT),
+            pygame.Rect(700, 300 - (2 * SPACESHIP_HEIGHT), SPACESHIP_WIDTH, SPACESHIP_HEIGHT)]
+    yellows = [pygame.Rect(100, 300 + SPACESHIP_HEIGHT, SPACESHIP_WIDTH, SPACESHIP_HEIGHT),
+               pygame.Rect(100, 300 + (2 * SPACESHIP_HEIGHT), SPACESHIP_WIDTH, SPACESHIP_HEIGHT),
+               pygame.Rect(100, 300 - SPACESHIP_HEIGHT, SPACESHIP_WIDTH, SPACESHIP_HEIGHT),
+               pygame.Rect(100, 300 - (2 * SPACESHIP_HEIGHT), SPACESHIP_WIDTH, SPACESHIP_HEIGHT)]
+    return reds, yellows

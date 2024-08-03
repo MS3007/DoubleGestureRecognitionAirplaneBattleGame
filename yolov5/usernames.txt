@@ -1,0 +1,8 @@
+user1,15.0
+pl1,12.5
+player2,10.0
+renminshuai,9.0
+user2,0
+nuomu,-0.45
+pl2,-0.5
+player1,-0.6199999999999992
